@@ -172,7 +172,7 @@ header .footer p {
     left: 0;
 }
 
-.mobile-nav-active header .footer {
+.mobile-nav-active header .fa-xmark {
     left: 0;
 }
 
@@ -287,20 +287,20 @@ main {
 
 /* Global Heading */
 
-.sub-heading {
+#about .sub-heading {
     color: black;
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.divider {
+#about .divider {
     width: 80px;
     height: 4px;
     background-color: var(--themeColor);
     border-radius: 3px;
 }
 
-#about .divider~p {
+#about .divider .sub-para {
     color: var(--textColor);
     font-size: 15px;
     letter-spacing: 0.4px;
@@ -331,11 +331,11 @@ main {
     color: var(--themeColor);
     font-weight: 700;
     font-size: 35px;
-    letter-spacing: 0;
+    letter-spacing: 0.5px;
     margin-top: -10px;
 }
 
-#about .about-col .info-col p {
+#about .about-col .info-col .sub-para {
     color: var(--textColor);
     font-size: 15px;
     letter-spacing: 0.5px;
@@ -360,6 +360,72 @@ main {
 #about .about-col .info-col .icon-list-col .icon-list ul li strong {
     color: var(--sideBGColor);
     font-weight: 600;
+}
+
+#about .about-col .info-col .icon-list-col .icon-list ul li span {
+    color: var(--textColor);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+/* Mobile View */
+
+@media only screen and (max-widh: 830px) {
+    #about {
+        padding: 50px 10px;
+    }
+}
+
+#about .divider~p {
+    font-size: 14px;
+    letter-spacing: 0;
+    text-align: justify;
+}
+
+#about .about-col {
+    flex-direction: column;
+}
+
+#about .about-col .img-col img {
+    width: 50%;
+}
+
+#about .about-col .info-col h2 {
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+#about .about-col .info-col .sub-para {
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+#about .about-col .info-col .icon-list-col {
+    flex-direction: column;
+    gap: 0;
+}
+
+#about .about-col .info-col .icon-list-col .icon-list ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+#about .about-col .info-col .icon-list-col .icon-list ul li strong {
+    font-weight: 500;
+    margin-right: 0px;
+}
+
+#about .about-col .info-col .icon-list-col .icon-list ul li span {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+@media only screen and (max-widh: 400px) {
+    #about .about-col .img-col img {
+        width: 90%;
+    }
 }
 
 
