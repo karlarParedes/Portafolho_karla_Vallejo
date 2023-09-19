@@ -9,11 +9,10 @@ MenuBtn.addEventListener('click', function(e) {
 
 // Typing Effect
 
-// let typed = new Typed('.auto-input', {
-//     strings: ['Eu', 'Sou', 'Front-End', 'Developer'],
-//     typeSpeed: 100,
-//     backSpeed: 100,
-//     backDelay: 2000,
-//     loop: true,
-
-// })
+let typed = new Typed('.auto-input', {
+    strings: ['Sou', 'Front-End', 'Developer!'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true,
+})
